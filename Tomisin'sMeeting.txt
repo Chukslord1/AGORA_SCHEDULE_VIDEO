@@ -1,0 +1,6 @@
+meeting title: Tomisin's Meeting
+ channel: Tomisin_Meeting
+ meeting_subject: Tomisin is doing a meeting with Ochuko
+ start time: 12:38
+ end time: 13:38
+ date: 2021-07-23

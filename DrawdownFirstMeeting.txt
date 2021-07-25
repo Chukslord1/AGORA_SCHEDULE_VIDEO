@@ -1,0 +1,6 @@
+meeting title: Drawdown First Meeting
+ channel: My_Drawdown
+ meeting_subject: Drawdown First Meeting(Meeting with Client)
+ start time: 04:03
+ end time: 05:03
+ date: 2021-07-23

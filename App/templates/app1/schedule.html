@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    <h1 class="h11">Schedule a Meeting</h1>
+    <div class=" container">
+      {% if message %}
+      <center><h1>{{message}}</h1></center>
+      {% else %}
+      <form method="POST" >
+        {% csrf_token %}
+      <p>channel Name</p>
+      <input type="text" name="channel_name" value="" placeholder="Channel Name" class="input">
+      <p>Meeting Title</p>
+      <input type="text" name="meeting_title" value="" placeholder="Meeting Title" class="input">
+      <p>Subject</p>
+      <textarea name="meeting_subject" rows="8" cols="80" placeholder="Subject" class="input"></textarea>
+      <p>Start Time</p>
+      <input type="time" name="start_time" value="" placeholder="Time" class="input">
+      <p>End Time</p>
+      <input type="time" name="end_time" value="" placeholder="Time" class="input">
+      <p>Date</p>
+      <input type="date" name="date" value="" placeholder="Date" class="input">
+      <div class="flex">
+        <button name="button" type="submit" class="new1">Submit</button>
+        <a href="index"><button type="button" name="button" class="new1">Back</button></a>
+      </div>
+      {% endif %}
+    </div>
+  </form>
+
+  </body>
+</html>
