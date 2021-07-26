@@ -22,7 +22,7 @@ from agora.views import Agora
 from App.models import Channel
 
 channel=""
-app_id='agora_app_id'
+app_id="replace_with_app_id"
 if Channel.objects.filter(app_id=app_id):
     channel=Channel.objects.filter(app_id=app_id).last().channel
 

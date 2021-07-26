@@ -1,0 +1,6 @@
+meeting title: Test Schedule Channel 5
+ channel: Channel_5
+ meeting_subject: Test Schedule Channel 5
+ start time: 01:50
+ end time: 02:51
+ date: 2021-07-26

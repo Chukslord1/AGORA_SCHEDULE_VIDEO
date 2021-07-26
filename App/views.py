@@ -6,7 +6,7 @@ import secrets
 
 # Create your views here.
 def index(request):
-    app_id="agora_app_id"
+    app_id="replace_with_app_id"
     if request.method=="POST":
         channel=request.POST.get("channel")
         new=request.POST.get("new")
@@ -19,7 +19,7 @@ def index(request):
             meeting = Meeting.objects.create(channel=channel)
             meeting.save()
             return redirect(url)
-        elif Meeting.objects.filter(channel=channel):
+        if Meeting.objects.filter(channel=channel):
             url="agora/?channel="+channel
             if Channel.objects.filter(app_id=app_id,channel=channel):
                 channel_delete=Channel.objects.get(app_id=app_id,channel=channel)
